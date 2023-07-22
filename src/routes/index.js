@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 
 //route
-const rRout = require("../api/products/routes");
+const productsRoute = require("../api/products/routes");
 const historyRoute = require("../api/history/routes");
 
-app.use("/me", rRout);
-app.use("/history", historyRoute);
+app.use("/api/v1/products", productsRoute);
+app.use("/api/v1/history", historyRoute);
 module.exports = app;

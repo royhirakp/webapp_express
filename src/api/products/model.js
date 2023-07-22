@@ -9,7 +9,7 @@ const productSchma = new Schema({
     data: Buffer,
     contentType: String,
   },
-  Qty: { required: true, type: String },
+  Qty: { required: true, type: Number },
 });
 const model = mongoose.model("product", productSchma); // NOT COMPLITED
 module.exports = model;
